@@ -1,0 +1,9 @@
+/* * ------------------------------------------------------------------------
+ * JA University Template
+ * ------------------------------------------------------------------------
+ * Copyright (C) 2004-2011 J.O.O.M Solutions Co., Ltd. All Rights Reserved.
+ * @license - Copyrighted Commercial Software
+ * Author: J.O.O.M Solutions Co., Ltd
+ * Websites:  http://www.joomlart.com -  http://www.joomlancers.com
+ * This file may not be redistributed in whole or significant part.
+ * ------------------------------------------------------------------------*/body {  background: url(../images/body-bg.gif);}#frame {  background: #f0f0f0;  border: 1px solid #ddd;  margin-top: 50px;}#frame h1 {  background: url(../images/logo.png) no-repeat center center #10151c;  color: #666;  display: block;  height: 56px;  margin: 0 auto;  padding: 5px;  text-transform: uppercase;  text-shadow: 1px 1px 0px #fff;  text-indent: -999em;  width: 220px;}#frame #form-login p {  padding: 5px 0;  vertical-align: middle;}#frame p.offline-message {  color: #666;}#frame #form-login label {  color: #666;  font-weight: bold;  vertical-align: middle;  margin: 0;  width: 8em;}#frame #form-login #remember {  margin: 0;  vertical-align: middle;  width: auto;}#frame #form-login .inputbox {  background: #fff;  border: 1px solid #ddd;  padding: 5px;  width: 15em;}#frame #form-login .inputbox:focus {  border-color: #666;}#frame #form-login .button {  background: #333;  border: 1px solid #333;  color: #fff;  cursor: pointer;  display: inline-block;  height: auto;  margin-top: 10px;  padding: 5px 10px;  text-align: center;  text-transform: uppercase;}#frame #form-login .button:hover {  background: #d42b1e;  border-color: #d42b1e;  cursor: pointer;}

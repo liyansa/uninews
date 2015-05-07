@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension 
+	type="component" 
+	version="1.6" 
+	method="upgrade">
+	
+	<name>COM_DMPINBOARD</name>
+	<author>DM Digital</author>
+	<creationDate>March 2013</creationDate>
+	<copyright>All rights reserved by DM Digital - www.dmdigital.net</copyright>
+	<license>GNU/LGPL http://www.gnu.org/licenses/lgpl-3.0-standalone.html</license>
+	<authorEmail>support@dmjoomlaextensions.com</authorEmail>
+	<authorUrl>www.dmjoomlaextensions.com</authorUrl>
+	<version>1.2.1</version>
+	<description>DM Pinboard Pro is a pinterest-like view for Joomla! Articles and K2 Items. Create a new DM Pinboard menu item and configure your pinterest view in a few clicks.</description>
+	
+	<files folder="site">
+		<filename>dmpinboard.php</filename>
+		<folder>controllers</folder>
+		<folder>css</folder>
+		<folder>helpers</folder>
+		<folder>js</folder>
+		<folder>tmpl</folder>
+		<folder>views</folder>
+	</files>
+	
+	<languages folder="site/language">
+		<language tag="en-GB">en-GB.com_dmpinboard.ini</language>
+	</languages>
+	
+	<administration>
+		
+		<menu>COM_DMPINBOARD</menu>
+		
+		<files folder="admin">
+			<filename>dmpinboard.php</filename>
+		</files>
+		
+		<languages folder="admin/language">
+			<language tag="en-GB">en-GB.com_dmpinboard.ini</language>
+			<language tag="en-GB">en-GB.com_dmpinboard.sys.ini</language>
+		</languages>
+		
+	</administration>
+	
+</extension>

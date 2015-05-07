@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<extension 
+	type="module" 
+	version="2.5" 
+	client="site"
+	method="upgrade">
+	<name>JA Slideshow Lite</name>
+	<author>JoomlArt.com</author>
+	<creationDate>09 November 2012</creationDate>
+	<copyright>Copyright (C), J.O.O.M Solutions Co., Ltd. All Rights Reserved.</copyright>
+	<license>license GNU/GPLv3 http://www.gnu.org/licenses/gpl-3.0.html</license>
+	<authorEmail>webmaster@joomlart.com</authorEmail>
+	<authorUrl>www.joomlart.com</authorUrl>
+	<version>1.1.1</version>
+	<updateservers>
+	    <server type="collection">http://update.joomlart.com/service/tracking/list.xml</server>
+	</updateservers>
+	<description>
+		<![CDATA[
+		<h1>JA Slideshow Lite module for Joomla! 2.5</h1>
+		<div style='font-weight: normal'>
+			<p><span style='color: #ff6600;'><strong>Features:</strong></span>Display images from a folder. Includes auto-resized images, beautiful animation effects, and inline text-embeded descriptions. This module use css3 to enable animation effects and support responsive design</p>
+			<strong><span style='color: #ff0000;'>Usage Instructions:</span></strong><br />
+			<ul>
+				<li><strong>The module display can be enhanced by CSS overrides in the demo templates. You may have to customize CSS to get your desired effects.</strong></li>
+			</ul>
+			<strong style='color: #ff0000;'>Configuration</strong>
+			<ul>
+				<li>Fade, Slide, Verticle Rotate, Horizontal Rotate, Rotate are easy and straingt forward.</li>
+				<li>
+					<strong style="color: #ff3300">Custom</strong>
+					<ul style="list-style: disc">
+						<li>Custom Slideshow Type required a set of images. All images must have the name in format [slideItemNo-typeOfImage.imageExt]. For ex: sl1-bg, sl1-first, sl2-bg. The first part is the slide identity and should be the same for all 3 images for a slide item. The second part should be named to "bg", "first", "second". Each slide item required a "bg" image type and have two optional "first" or "last" image types.</li>
+						<li><strong>Advanced Configuration</strong>
+							<ul style="padding-left: 20px">
+								<li style="list-style: disc">[img] property should point to "bg" image type.</li>
+								<li style="list-style: disc">[class] property should be one of [leftright, leftleft, rightright, updown, downdown, rupdown, rupup].</li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+			</ul>
+			<p>Copyright 2004 - 2012 <a href='http://www.joomlart.com/' title='Visit Joomlart.com!'>JoomlArt.com</a>.</p>
+		</div>
+		]]>
+	</description>
+	<files>
+		<filename module="mod_jaslideshowlite">index.html</filename>
+		<filename module="mod_jaslideshowlite">mod_jaslideshowlite.php</filename>
+		<folder>helpers</folder>
+		<folder>elements</folder>
+		<folder>assets</folder>
+		<folder>tmpl</folder>
+		<folder>admin</folder>
+	</files>
+	<languages>
+		<language tag="en-GB">en-GB.mod_jaslideshowlite.ini</language>
+		<language tag="en-GB">en-GB.mod_jaslideshowlite.sys.ini</language>
+	</languages>
+	<config>
+		<fields 
+			name="params" 
+			addfieldpath="/modules/mod_jaslideshowlite/elements">
+			<fieldset 
+				name="basic">
+				<field 
+					name="moduleclass_sfx" 
+					type="text" 
+					default=""
+					label="MODULE_CLASS_SUFFIX" 
+					description="PARAMMODULECLASSSUFFIX" />
+					
+				<field 
+					name="folder" 
+					type="text" 
+					default="/images/sampledata/slideshow"
+					label="IMAGE_FOLDER" 
+					description="IMAGE_FOLDER_DESC" />
+				
+				<field 
+					name="type"
+					type="list" 
+					default="fade"
+					label="SLIDESHOW_TYPE" 
+					description="SLIDESHOW_TYPE_DESC">
+						<option value="fade">Fade</option>
+						<option value="slide">Slide</option>
+						<option value="vrotate">Vertical Rotate</option>
+						<option value="hrotate">Horizontal Rotate</option>
+						<option value="crotate">Rotate</option>
+						<option value="custom">Custom</option>
+				</field>
+				
+				<field 
+					name="autoplay" 
+					type="list" 
+					default="1"
+					label="ENABLE_AUTOPLAY" 
+					description="ENABLE_AUTOPLAY_DESC">
+						<option value="1">Yes</option>
+						<option value="0">No</option>
+				</field>
+				
+				<field 
+					name="thumbnail"
+					type="list" 
+					default="1"
+					label="SHOW_THUMBNAIL" 
+					description="SHOW_THUMBNAIL_DESC">
+						<option value="1">Yes</option>
+						<option value="0">No</option>
+				</field>
+				
+				<field 
+					name="navigation" 
+					type="list" 
+					default="1"
+					label="SHOW_NAVIGATION" 
+					description="SHOW_NAVIGATION_DESC">
+						<option value="1">Yes</option>
+						<option value="0">No</option>
+				</field>
+				
+				<field 
+					name="description" 
+					type="textarea"
+					filter="raw" 
+					cols="60"
+					rows="6"
+					default="" 
+					label="ADCONFIG_FOR_EACH_ITEM" 
+					description="ADCONFIG_FOR_EACH_ITEM_DESC" />
+		
+				<field 
+					name="thumbWidth" 
+					type="text" 
+					default="60"
+					label="THUMB_WIDTH" 
+					description="THUMB_WIDTH_DESC" />
+
+				<field 
+					name="thumbHeight" 
+					type="text" 
+					default="60"
+					label="THUMB_HEIGHT" 
+					description="THUMB_HEIGHT_DESC" />
+					
+				<field 
+					name="mainWidth" 
+					type="text" 
+					default="auto"
+					label="MAIN_WIDTH" 
+					description="MAIN_WIDTH_DESC" />
+					
+				<field 
+					name="mainHeight" 
+					type="text" 
+					default="auto"
+					label="MAIN_HEIGHT" 
+					description="MAIN_HEIGHT_DESC" />
+					
+			</fieldset>
+			
+			<fieldset name="advanced">
+				<field 
+					name="enable_cache" 
+					type="list" 
+					default="1" 
+					filter="integer"
+					label="CACHING"
+					description="CACHING_DESC">
+					<option value="1">Use Cache</option>
+					<option value="0">Don't cache</option>
+				</field>
+				<field 
+					name="cache_time" 
+					type="text" 
+					default="30" 
+					label="CACHE_TIME"
+					filter="integer"
+					description="CACHE_TIME_DESC" />
+					
+			</fieldset>
+		</fields>
+	</config>
+</extension>

@@ -1,0 +1,9 @@
+/* * ------------------------------------------------------------------------
+ * JA University Template
+ * ------------------------------------------------------------------------
+ * Copyright (C) 2004-2011 J.O.O.M Solutions Co., Ltd. All Rights Reserved.
+ * @license - Copyrighted Commercial Software
+ * Author: J.O.O.M Solutions Co., Ltd
+ * Websites:  http://www.joomlart.com -  http://www.joomlancers.com
+ * This file may not be redistributed in whole or significant part.
+ * ------------------------------------------------------------------------*/#jasdl-mainnav li a {  color: #afafaf;  padding: 15px 20px;  font-weight: bold;  text-transform: uppercase;}#jasdl-mainnav li a:hover,#jasdl-mainnav li a:focus,#jasdl-mainnav li a:active {  color: #fff;}#jasdl-mainnav li.active a,#jasdl-mainnav li.active a:hover,#jasdl-mainnav li.active a:active,#jasdl-mainnav li.active a:focus {	background: #1b212a;	color: #d42b1e;}/* Sub Nav ---*/#ja-subnav {  background-color: #efefef;  border-bottom: 1px solid #ddd;  z-index: 11;}#ja-subnav li {  background: url(../../images/subnav-sep.gif) no-repeat right center;  margin-left: 0;  margin-right: 0;  padding: 13px 10px;}#ja-subnav li:last-child {  background: none;}#ja-subnav li a {  color: #666;  text-shadow: 1px 1px 0 #fff;}#ja-subnav li a:hover,#ja-subnav li a:focus,#ja-subnav li a:active {  color: #d42b1e !important;}/* Sub Nav (lv2) ---*/#ja-subnav ul li ul {	background: #F6F6F6;	border: 1px solid #ccc;}#ja-subnav ul li ul li {  background: none;	border-top: 1px solid #ddd;}#ja-subnav ul li ul li:hover {  background: #f0f0f0;}#ja-subnav ul li ul li.active a {  font-weight: bold;}#ja-subnav ul li ul li:first-child {	border: 0;}

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="plugin" group="content">
+  <name>Registered Downloads for K2</name>
+  <author>Jason Brennan</author>
+  <creationDate>December 2012</creationDate>
+  <copyright>Copyright (C) 2010 - 2012 Jason Brennan All rights reserved.</copyright>
+  <license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+  <authorEmail>design@jasonbrennan.com</authorEmail>
+  <authorUrl>http://www.jasonbrennan.com</authorUrl>
+  <version>1.0.0</version>
+  <description>Ask users to regirster before downloading K2 Attatchments</description>
+  <files>
+    <filename plugin="k2_rdownloads">k2_rdownloads.php</filename>
+  </files>
+  <config>
+    <fields name="params">
+      <fieldset name="basic">
+        <field name="enabled" type="radio" default="1" label="Enable K2 Register to Download">
+          <option value="0">No</option>
+          <option value="1">Yes</option>
+        </field>
+      </fieldset>
+    </fields>
+  </config>
+</extension>
+

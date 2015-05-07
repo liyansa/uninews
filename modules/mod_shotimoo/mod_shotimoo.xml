@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="module" method="upgrade">
+	<name>shotimoo - Simple notifier</name>
+	<author>Yannick Gaultier</author>
+	<creationDate>2011-06-15</creationDate>
+	<copyright>2011 - Yannick Gaultier</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>shumisha@gmail.com</authorEmail>
+	<version>1.1.7.44</version>
+	<description>Display one or more javascript information box to site visitor. Requires Mootools V 1.2+. Wrapper for Notimoo, Copyright (c) 2009 PaquitoSoft, released under the MIT licence. See http://paquitosoft.com/</description>
+	<files>
+		<filename module="mod_shotimoo">mod_shotimoo.php</filename>
+	</files>
+  <media destination="shotimoo_assets" folder="media">
+    <folder>1.2.1</folder>
+    <filename>index.html</filename>
+  </media>
+	<languages>
+		<language tag="en-GB">language/en-GB.mod_shotimoo.ini</language>
+	</languages>
+	<params>
+		<param name="vLocation" type="radio" default="top" label="MOD_SHOTIMOO_VLOCATION" description="MOD_SHOTIMOO_VLOCATION_DESC">
+			<option value="top">MOD_SHOTIMOO_TOP</option>
+			<option value="bottom">MOD_SHOTIMOO_BOTTOM</option>
+		</param>
+		<param name="hLocation" type="radio" default="right" label="MOD_SHOTIMOO_HLOCATION" description="MOD_SHOTIMOO_HLOCATION_DESC">
+			<option value="right">MOD_SHOTIMOO_RIGHT</option>
+			<option value="left">MOD_SHOTIMOO_LEFT</option>
+		</param>
+		<param name="useclearcookie" type="radio" default="0" label="MOD_SHOTIMOO_USECLEARCOOKIE" description="MOD_SHOTIMOO_USECLEARCOOKIE_DESC">
+			<option value="0">MOD_SHOTIMOO_NO</option>
+			<option value="1">MOD_SHOTIMOO_YES</option>
+		</param>
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="message1" type="textarea" rows="5" cols="30" default="Welcome to our site!" label="MOD_SHOTIMOO_MESSAGE" description="MOD_SHOTIMOO_MESSAGE_DESC"/>
+		<param name="title1" type="text" size="50" default="" label="MOD_SHOTIMOO_TITLE" description="MOD_SHOTIMOO_TITLE_DESC"/>
+		<param name="close_delay1" type="text" default="0" label="MOD_SHOTIMOO_DELAY" description="MOD_SHOTIMOO_DELAY_DESC"/>
+		<param name="display_from1" type="calendar" format="%Y-%m-%d %H:%M:%S" default="" label="MOD_SHOTIMOO_DISPLAY_FROM" description="MOD_SHOTIMOO_DISPLAY_FROM_DESC" />
+		<param name="display_until1" type="calendar" format="%Y-%m-%d %H:%M:%S" default="" label="MOD_SHOTIMOO_DISPLAY_UNTIL" description="MOD_SHOTIMOO_DISPLAY_UNTIL_DESC" />
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="message2" type="textarea" rows="5" cols="30" default="" label="MOD_SHOTIMOO_MESSAGE" description="MOD_SHOTIMOO_MESSAGE_DESC"/>
+		<param name="title2" type="text" size="50" default="" label="MOD_SHOTIMOO_TITLE" description="MOD_SHOTIMOO_TITLE_DESC"/>
+		<param name="close_delay2" type="text" default="0" label="MOD_SHOTIMOO_DELAY" description="MOD_SHOTIMOO_DELAY_DESC"/>
+		<param name="display_from2" type="calendar" format="%Y-%m-%d %H:%M:%S" default="" label="MOD_SHOTIMOO_DISPLAY_FROM" description="MOD_SHOTIMOO_DISPLAY_FROM_DESC" />
+		<param name="display_until2" type="calendar" format="%Y-%m-%d %H:%M:%S" default="" label="MOD_SHOTIMOO_DISPLAY_UNTIL" description="MOD_SHOTIMOO_DISPLAY_UNTIL_DESC" />
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="message3" type="textarea" rows="5" cols="30" default="" label="MOD_SHOTIMOO_MESSAGE" description="MOD_SHOTIMOO_MESSAGE_DESC"/>
+		<param name="title3" type="text" size="50" default="" label="MOD_SHOTIMOO_TITLE" description="MOD_SHOTIMOO_TITLE_DESC"/>
+		<param name="close_delay3" type="text" default="0" label="MOD_SHOTIMOO_DELAY" description="MOD_SHOTIMOO_DELAY_DESC"/>
+		<param name="display_from3" type="calendar" format="%Y-%m-%d %H:%M:%S" default="" label="MOD_SHOTIMOO_DISPLAY_FROM" description="MOD_SHOTIMOO_DISPLAY_FROM_DESC" />
+		<param name="display_until3" type="calendar" format="%Y-%m-%d %H:%M:%S" default="" label="MOD_SHOTIMOO_DISPLAY_UNTIL" description="MOD_SHOTIMOO_DISPLAY_UNTIL_DESC" />
+	</params>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="vLocation" type="radio" default="top" label="MOD_SHOTIMOO_VLOCATION" description="MOD_SHOTIMOO_VLOCATION_DESC">
+					<option value="top">MOD_SHOTIMOO_TOP</option>
+					<option value="bottom">MOD_SHOTIMOO_BOTTOM</option>
+				</field>
+				<field name="hLocation" type="radio" default="right" label="MOD_SHOTIMOO_HLOCATION" description="MOD_SHOTIMOO_HLOCATION_DESC">
+					<option value="right">MOD_SHOTIMOO_RIGHT</option>
+					<option value="left">MOD_SHOTIMOO_LEFT</option>
+				</field>
+				<field name="useclearcookie" type="radio" default="0" label="MOD_SHOTIMOO_USECLEARCOOKIE" description="MOD_SHOTIMOO_USECLEARCOOKIE_DESC">
+					<option value="0">MOD_SHOTIMOO_NO</option>
+					<option value="1">MOD_SHOTIMOO_YES</option>
+				</field>
+			</fieldset>
+			<fieldset name="message1">
+				<field name="message1" type="textarea" rows="5" cols="30" default="Welcome to our site!" label="MOD_SHOTIMOO_MESSAGE" description="MOD_SHOTIMOO_MESSAGE_DESC"/>
+				<field name="title1" type="text" size="50" default="" label="MOD_SHOTIMOO_TITLE" description="MOD_SHOTIMOO_TITLE_DESC"/>
+				<field name="close_delay1" type="text" default="0" label="MOD_SHOTIMOO_DELAY" description="MOD_SHOTIMOO_DELAY_DESC"/>
+				<field name="display_from1" type="calendar" format="%Y-%m-%d %H:%M:%S" default="" label="MOD_SHOTIMOO_DISPLAY_FROM" description="MOD_SHOTIMOO_DISPLAY_FROM_DESC" />
+				<field name="display_until1" type="calendar" format="%Y-%m-%d %H:%M:%S" default="" label="MOD_SHOTIMOO_DISPLAY_UNTIL" description="MOD_SHOTIMOO_DISPLAY_UNTIL_DESC" />
+			</fieldset>
+			<fieldset name="message2">
+				<field name="message2" type="textarea" rows="5" cols="30" default="" label="MOD_SHOTIMOO_MESSAGE" description="MOD_SHOTIMOO_MESSAGE_DESC"/>
+				<field name="title2" type="text" size="50" default="" label="MOD_SHOTIMOO_TITLE" description="MOD_SHOTIMOO_TITLE_DESC"/>
+				<field name="close_delay2" type="text" default="0" label="MOD_SHOTIMOO_DELAY" description="MOD_SHOTIMOO_DELAY_DESC"/>
+				<field name="display_from2" type="calendar" format="%Y-%m-%d %H:%M:%S" default="" label="MOD_SHOTIMOO_DISPLAY_FROM" description="MOD_SHOTIMOO_DISPLAY_FROM_DESC" />
+				<field name="display_until2" type="calendar" format="%Y-%m-%d %H:%M:%S" default="" label="MOD_SHOTIMOO_DISPLAY_UNTIL" description="MOD_SHOTIMOO_DISPLAY_UNTIL_DESC" />
+			</fieldset>
+			<fieldset name="message3">
+				<field name="message3" type="textarea" rows="5" cols="30" default="" label="MOD_SHOTIMOO_MESSAGE" description="MOD_SHOTIMOO_MESSAGE_DESC"/>
+				<field name="title3" type="text" size="50" default="" label="MOD_SHOTIMOO_TITLE" description="MOD_SHOTIMOO_TITLE_DESC"/>
+				<field name="close_delay3" type="text" default="0" label="MOD_SHOTIMOO_DELAY" description="MOD_SHOTIMOO_DELAY_DESC"/>
+				<field name="display_from3" type="calendar" format="%Y-%m-%d %H:%M:%S" default="" label="MOD_SHOTIMOO_DISPLAY_FROM" description="MOD_SHOTIMOO_DISPLAY_FROM_DESC" />
+				<field name="display_until3" type="calendar" format="%Y-%m-%d %H:%M:%S" default="" label="MOD_SHOTIMOO_DISPLAY_UNTIL" description="MOD_SHOTIMOO_DISPLAY_UNTIL_DESC" />
+			</fieldset>
+		</fields>
+	</config>
+</install>

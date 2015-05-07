@@ -1,0 +1,9 @@
+/* * ------------------------------------------------------------------------
+ * JA University Template
+ * ------------------------------------------------------------------------
+ * Copyright (C) 2004-2011 J.O.O.M Solutions Co., Ltd. All Rights Reserved.
+ * @license - Copyrighted Commercial Software
+ * Author: J.O.O.M Solutions Co., Ltd
+ * Websites:  http://www.joomlart.com -  http://www.joomlancers.com
+ * This file may not be redistributed in whole or significant part.
+ * ------------------------------------------------------------------------*/body {  font-family: Arial, Helvetica, sans-serif;  font-size: 12px;}.error {  background: url(../images/error-bg.png) no-repeat left top;  height: 231px;  margin: 100px auto 0;  overflow: hidden;  width: 704px;}.error #outline {  color: #d9dbdd;  font-family: 'Handlee', cursive;  margin: 40px 40px 40px 140px;  text-align: center;}.error #outline h1 {  font-size: 5.500em;  margin: 0;  padding: 0;  line-height: 1;}.error #outline .error-message {  font-size: 2em;  margin-bottom: 20px;}.error #errorboxbody {  font-size: 1.2em;}.error #errorboxbody a {  border-bottom: 1px dotted #d9dbdd;  color: #d9dbdd;  font-weight: bold;  text-decoration: none;}.error #errorboxbody a:hover,.error #errorboxbody a:focus,.error #errorboxbody a:active {  border-color: #d42b1e;  color: #d42b1e;}

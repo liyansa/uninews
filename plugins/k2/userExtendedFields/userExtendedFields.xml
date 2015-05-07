@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="plugin" group="k2" method="upgrade">
+	<name>User Extended Fields for K2 (by JoomlaWorks)</name>
+	<author>JoomlaWorks</author>
+	<authorEmail>contact@joomlaworks.net</authorEmail>
+	<authorUrl>www.joomlaworks.net</authorUrl>
+	<copyright>Copyright (c) 2006-2011 JoomlaWorks Ltd. All rights reserved.</copyright>
+	<creationDate>November 20th, 2012</creationDate>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<version>2.1</version>
+	<description>PLG_K2_UEF_USER_EXTENDED_FIELDS_FOR_K2_BY_JOOMLAWORKS</description>
+
+	<!-- Joomla! plugin parameters -->
+	<params addpath="/administrator/components/com_k2/elements">
+		<param name="contactDetails" type="radio" default="0" label="PLG_K2_UEF_SHOW_USER_CONTACT_DETAILS_IN_PUBLIC" description="">
+			<option value="0">PLG_K2_UEF_NO</option>
+			<option value="1">PLG_K2_UEF_YES</option>
+		</param>
+		<param name="socialProfiles" type="radio" default="1" label="PLG_K2_UEF_SHOW_USER_SOCIAL_PROFILES_IN_PUBLIC" description="">
+			<option value="0">PLG_K2_UEF_NO</option>
+			<option value="1">PLG_K2_UEF_YES</option>
+		</param>
+	</params>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="contactDetails" type="radio" default="0" label="PLG_K2_UEF_SHOW_USER_CONTACT_DETAILS_IN_PUBLIC" description="">
+					<option value="0">PLG_K2_UEF_NO</option>
+					<option value="1">PLG_K2_UEF_YES</option>
+				</field>
+				<field name="socialProfiles" type="radio" default="1" label="PLG_K2_UEF_SHOW_USER_SOCIAL_PROFILES_IN_PUBLIC" description="">
+					<option value="0">PLG_K2_UEF_NO</option>
+					<option value="1">PLG_K2_UEF_YES</option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+
+	<!-- K2 backend field parameters -->
+	<params group="user" addpath="/administrator/components/com_k2/elements">
+		<param name="address" type="text" size="40" default="" label="PLG_K2_UEF_ADDRESS" description=""/>
+		<param name="city" type="text" size="40" default="" label="PLG_K2_UEF_CITY" description=""/>
+		<param name="stateOrProvince" type="text" size="40" default="" label="PLG_K2_UEF_STATE_OR_PROVINCE" description=""/>
+		<param name="mobile" type="text" size="40" default="" label="PLG_K2_UEF_MOBILE" description=""/>
+		<param name="facebook" type="text" size="40" default="" label="PLG_K2_UEF_FACEBOOK" description=""/>
+		<param name="twitter" type="text" size="40" default="" label="PLG_K2_UEF_TWITTER" description=""/>
+		<param name="google" type="text" size="40" default="" label="PLG_K2_UEF_GOOGLE_PLUS" description=""/>
+	</params>
+	<files>
+		<filename plugin="userExtendedFields">userExtendedFields.php</filename>
+		<folder>userExtendedFields</folder>
+	</files>
+	<languages>
+		<language tag="en-GB">language/en-GB/en-GB.plg_k2_userextendedfields.ini</language>
+		<language tag="en-GB">language/en-GB/en-GB.plg_k2_userextendedfields.sys.ini</language>
+	</languages>
+</install>

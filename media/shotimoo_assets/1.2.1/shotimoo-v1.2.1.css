@@ -1,0 +1,46 @@
+/*
+Script: Notimoo.js
+  Notimoo - Notification system using Mootools (1.2)
+
+License:
+  MIT-style license.
+  Copyright (c) 2009 PaquitoSoft
+
+  Permission is hereby granted, free of charge, to any
+  person obtaining a copy of this software and associated
+  documentation files (the "Software"), to deal in the
+  Software without restriction, including without limitation
+  the rights to use, copy, modify, merge, publish,
+  distribute, sublicense, and/or sell copies of the
+  Software, and to permit persons to whom the Software is
+  furnished to do so, subject to the following conditions:
+  
+  The above copyright notice and this permission notice
+  shall be included in all copies or substantial portions of
+  the Software.
+  
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY
+  KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE
+  WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR
+  PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS
+  OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR
+  OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR
+  OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
+  SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+Author:
+  PaquitoSoft (http://paquitosoft.com/).
+
+Code & Documentation:
+  PaquitoSoft blog (http://paquitosoft.com/?page_id=53)
+
+Inspiration:
+    - Growl by Growl team (http://growl.info/)
+  - Window.Growl by Daniel Mota (http://icebeat.bitacoras.com/mootools/growl/)
+
+*/
+body{
+	position:inherit;
+	position:inherit !important;
+}
+.shotimoo{position:absolute;z-index:999;cursor:pointer;-moz-border-radius:10px;-webkit-border-radius:10px;padding:10px;border:3px;border-style:solid;border-color:#B2B2B2;background:#333;color:#FFF;}.shotimoo .shotimootitle{font-weight:bold;border-bottom:1px solid;}.shotimoo .shotimoomessage{margin-top:2px;}.shotimoo a{color:#FFF;}
